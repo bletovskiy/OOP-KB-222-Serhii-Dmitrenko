@@ -1,3 +1,4 @@
+package lab1;
 public class Task12 {
 
     public static boolean[] getSumCheckArray(int[] arr){

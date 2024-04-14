@@ -1,22 +1,22 @@
+package lab1;
 import java.util.Scanner;
 
-public class Task8 {
+public class Task7 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int sum = 0;
-        int count = 0;
-
-        while(true){
+        int max = Integer.MIN_VALUE;
+        
+        while (true){
             int num = scan.nextInt();
             if(num == 0){
                 break;
             }
-            sum += num;
-            count++;
+            if(num > max){
+                max = num;
+            }
         }
-        double average = (double) sum / count;
-        System.out.println(average);
+        System.out.println(max);
         scan.close();
     }
 }

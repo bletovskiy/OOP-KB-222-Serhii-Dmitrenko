@@ -1,3 +1,4 @@
+package lab1;
 public class Task10 {
     public static void main(String[] args) {
         int[] array = {5,3,2,7,9,1};
