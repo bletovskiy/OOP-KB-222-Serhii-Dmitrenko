@@ -1,7 +1,4 @@
-package lab1;
 public class Task14 {
-
-    // Метод для циклічного зсуву масиву на 1 позицію вправо
     public static void cycleSwap(int[] array) {
         if (array.length <= 1) return;
         

@@ -1,19 +1,18 @@
-package lab1;
 import java.util.Scanner;
 
 public class Task4 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Сколько незнакомцов вы встретите?");
+        System.out.println("How many strangers will you meet?");
         int count = scan.nextInt();
 
         if(count <= 0){
-            System.out.println("Введено некоректное значение. Количество незнакомцов должно быть больше нуля");
+            System.out.println("An invalid value has been entered. The number of strangers must be greater than zero");
             System.exit(0);
         }
         
-        System.out.println("Введите имена незнакомцов");
+        System.out.println("Enter the names of strangers");
         scan.nextLine();
 
         for (int i = 0; i < count; i++) {

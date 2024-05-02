@@ -1,12 +1,9 @@
-package lab1;
 import java.util.Scanner;
 
 public class Task3 {
     final static int pass = 12345;
     public static void main(String[] args) {
-        
         Scanner scan = new Scanner(System.in);
-
         System.out.print("Please enter the secret password: ");
         int input =  scan.nextInt();
         if (input == pass){
@@ -15,6 +12,5 @@ public class Task3 {
             System.out.println("Access denied");
         }
         scan.close();
-
     }
 }

@@ -1,9 +1,9 @@
-package lab1;
 import java.util.Scanner;
 
 public class Task2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        System.out.print("Enter time: ");
         int time = scan.nextInt();
         int sec = time % 60;
         int min = (time % 3600) / 60;

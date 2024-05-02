@@ -1,4 +1,3 @@
-package lab1;
 import java.util.Scanner;
 
 public class Task9 {
@@ -6,7 +5,7 @@ public class Task9 {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("ax^2 + bx + c = 0");
-        System.out.println("Enter a, b, c");
+        System.out.print("Enter a, b, c: ");
         double a = scan.nextDouble();
         double b = scan.nextDouble();
         double c = scan.nextDouble();
@@ -27,6 +26,5 @@ public class Task9 {
         }
         
         scan.close();
-
     }
 }
