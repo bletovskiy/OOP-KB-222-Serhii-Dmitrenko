@@ -39,7 +39,7 @@ public class Segment {
         double denom = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4);
         
         if (denom == 0) {
-            return null; // Segments are parallel or coincident
+            return null;
         }
         
         double intersectionX = ((x1 * y2 - y1 * x2) * (x3 - x4) - (x1 - x2) * (x3 * y4 - y3 * x4)) / denom;
@@ -51,7 +51,7 @@ public class Segment {
             intersectionY >= Math.min(y3, y4) && intersectionY <= Math.max(y3, y4)) {
             return new Point(intersectionX, intersectionY);
         } else {
-            return null; // Intersection point is outside the segments
+            return null;
         }
     }
 }

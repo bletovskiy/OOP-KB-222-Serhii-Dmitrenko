@@ -8,12 +8,10 @@ public class Main {
         System.out.println("Point 1: (" + p1.getX() + ", " + p1.getY() + ")");
         System.out.println("Point 2: (" + p2.getX() + ", " + p2.getY() + ")");
         
-        // Test Segment class
         Segment segment1 = new Segment(p1, p2);
         System.out.println("Length of Segment 1: " + segment1.length());
         System.out.println("Middle point of Segment 1: (" + segment1.middle().getX() + ", " + segment1.middle().getY() + ")");
         
-        // Test intersection method
         Point p3 = new Point(1, 1);
         Point p4 = new Point(2, 2);
         Segment segment2 = new Segment(p3, p4);

@@ -11,14 +11,12 @@ public class Triangle {
         this.vertex2 = vertex2;
         this.vertex3 = vertex3;
         
-        // Check if the triangle exists and is not degenerate
         if (!isValidTriangle()) {
             throw new IllegalArgumentException("Invalid triangle vertices.");
         }
     }
 
     private boolean isValidTriangle() {
-        // Check if the vertices are not collinear
         return area() != 0;
     }
 
